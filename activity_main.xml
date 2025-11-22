@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A">
+
+    <org.mozilla.geckoview.GeckoView
+        android:id="@+id/geckoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#111111"
+        android:padding="6dp">
+
+        <EditText
+            android:id="@+id/addressBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#00FFFF"
+            android:hint="Search or enter URL"
+            android:background="#1A1A1A" />
+
+        <ImageButton
+            android:id="@+id/refreshBtn"
+            android:src="@android:drawable/ic_popup_sync"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:tint="#00FFFF"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#111111">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="@android:color/transparent"
+            android:tint="#00FFFF" />
+
+        <ImageButton
+            android:id="@+id/forwardBtn"
+            android:src="@android:drawable/ic_media_next"
+            android:background="@android:color/transparent"
+            android:tint="#00FFFF" />
+
+        <ImageButton
+            android:id="@+id/newTabBtn"
+            android:src="@android:drawable/ic_input_add"
+            android:background="@android:color/transparent"
+            android:tint="#00FFFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>
